@@ -1,0 +1,106 @@
+.container {
+	margin: -8px;
+}
+.highlighted {
+	opacity: 0.5;
+}
+.box {
+	position: relative;
+	display: inline-block;
+	width: 100px;
+	height: 100px;
+	cursor: pointer;
+}
+.box:hover {
+    box-shadow: 0px 0px 5px grey;
+}
+/* Box style */
+.first {
+	background-color: #ff3300;
+}
+.second {
+	background-color: #ff9933;
+}
+.third {
+	background-color: #ffcc00;
+	-webkit-transition: height 1s ease-out, transform 2s;
+	-moz-transition: height 1s ease-out, transform 2s;
+	transition: height 1s ease-out, transform 2s;
+}
+.third:hover {
+	height: 100px;
+	transform: rotate(180deg);
+}
+.fourth {
+	background-color: #ffff00;
+}
+
+.fifth {
+	background-color: #ccff33;
+}
+.sixth {
+	background-color: #99ff66;
+}
+.seventh {
+	background-color: #00ff00;
+	-webkit-transition: border-radius 5s ease-out;
+	-moz-transition: border-radius 5s ease-out;
+	transition:  border-radius 5s ease-out;
+}
+.seventh:hover {
+	border-radius: 90px 5px 90px 5px;
+}
+.eigth {
+	background-color: #66ffff;
+	-webkit-transition: 300px 2s ease-out;
+	-moz-transition: 300px 2s ease-out;
+	transition: width 2s ease-out;
+}
+.eigth:hover {
+	width: 20px;
+}
+.ninth {
+	background-color: #3399ff;
+}
+.tenth {
+	background-color: #0066cc;
+}
+/* end of Box style */
+
+/* The animation code */
+@keyframes second {
+	0% {background-color: #ff9933;}
+    50% {background-color: yellow;}
+	100% {background-color: #ff9933;}
+}
+.container .second {
+	position: relative;
+	display: inline-block;
+	width: 100px;
+	height: 100px;
+	cursor: pointer;
+	background-color: #ff9933;
+	animation-name: second;
+	animation-duration: 10s;
+	animation-iteration-count: infinite;
+}
+/* End of animation code */
+
+/* Jquery effects */
+.toggleButton {
+	background-color: hsla(14, 100%, 35%, 0.58);
+}
+.fifthtoggleButton {
+	border-radius: 10px 30px 10px 30px;
+}
+.opacity {
+	opacity: 0.3;
+}
+.radius {
+	border-radius: 70px;
+}
+.combo {
+	opacity: 0.4;
+	border-radius: 70px;
+}
+/* end of Jquery */
