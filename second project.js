@@ -33,7 +33,7 @@ $(document).ready(function() {
 		if (random<=0.5) { 
 			random = $(this).addClass("opacity");
 			random = $(randomEffect).find(".eigth").addClass("opacity");
-		} else (0.5 <= random); {
+		} else (0.5 < random); {
 			random = $(this).addClass("radius");
 			random = $(randomEffect).find(".second").addClass("combo");
 		}		
